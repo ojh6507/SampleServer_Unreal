@@ -20,7 +20,7 @@ void AMyGameMode::BeginPlay() {
 	TCPClient = NewObject<UMyTCPClient>(this);
 
 	if (TCPClient) {
-		if (TCPClient->ConnectToServer(TEXT("192.168.0.27"), 8080))
+		if (TCPClient->ConnectToServer(TEXT("127.0.0.1"), 8080))
 		{
 
 		}
